@@ -25,7 +25,7 @@
         }
 
         else {
-            echo json_encode("ERROR!!");
+            echo json_encode("ERROResss!!");
         }
     }else{
         echo json_encode("ERROR FATAL!");
