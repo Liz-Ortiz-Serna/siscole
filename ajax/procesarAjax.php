@@ -11,6 +11,7 @@
         $data = json_decode($_POST['data']);
         $objController = new adminController();
     
+        
         if($data->id === "SESSION"){
             # code...
             $res_session = $objController->sessionController($data);
@@ -27,7 +28,7 @@
             echo json_encode("ERROR!!");
         }
     }else{
-        echo json_encode("ERROR!!");
+        echo json_encode("ERROR FATAL!");
     }
     
 
